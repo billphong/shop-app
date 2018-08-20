@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/shop"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/package_2"
+            android:title="@string/nav_category" />
+        <item
+            android:id="@+id/nav_bill"
+            android:icon="@drawable/shopping_bag_1"
+            android:title="@string/nav_bill" />
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/speech_bubble_1"
+            android:title="@string/nav_like" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/id_card"
+            android:title="@string/nav_account" />
+    </group>
+    <item android:title="Chỉ Mục">
+        <menu>
+
+        </menu>
+    </item>
+</menu>

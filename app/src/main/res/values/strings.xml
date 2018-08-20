@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Shop</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_bill">Quản lý đơn hàng</string>
+    <string name="nav_category">Danh mục sản phẩm</string>
+    <string name="nav_category2">Danh mục ngành hàng</string>
+    <string name="nav_like">Sản phẩm yêu thích</string>
+    <string name="nav_account">Quản lý tài khoản</string>
+
+
+    <string name="cate_book">Sách</string>
+    <string name="cate_toy">Đồ chơi- Mẹ và bé</string>
+    <string name="cate_closther">Thời trang</string>
+    <string name="cate_beauty">Làm đẹp - Sức khỏe</string>
+    <string name="cate_electric">Điện gia dụng </string>
+    <string name="cate_phone">Điện thoại - Máy tính bảng</string>
+
+</resources>

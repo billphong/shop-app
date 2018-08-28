@@ -8,6 +8,8 @@
     <string name="nav_account">Quản lý tài khoản</string>
     <string name="nav_best_seller">Sản phẩm bán chạy</string>
 
+    <string name="bt_view_all">Xem tất cả</string>
+
 
     <string name="cate_book">Sách</string>
     <string name="cate_toy">Đồ chơi- Mẹ và bé</string>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbars="none">
@@ -18,50 +20,79 @@
             android:layout_height="@dimen/slide_height"
             android:layout_marginTop="-10dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nav_category2"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/margin_side"
-            android:layout_marginBottom="@dimen/margin_side"
-            android:textAllCaps="true"
-            android:textColor="@color/txtHeader"
-            android:background="@color/colorBckgMenuHeader"
-            android:padding="@dimen/padding_header_item"
-            />
-
-        <com.shop.submit.shop.Uis.WrappingGridView
-            android:numColumns="3"
-            android:gravity="center"
-            android:stretchMode="columnWidth"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/gridCategory"
-            android:verticalSpacing="@dimen/padding_edittext"
-            android:scrollbars="none"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nav_best_seller"
-            android:textStyle="bold"
+            android:orientation="vertical"
+            android:background="@color/bckDivColor"
             android:layout_marginTop="@dimen/margin_side"
-            android:layout_marginBottom="@dimen/margin_side"
-            android:textAllCaps="true"
-            android:textColor="@color/txtHeader"
-            android:background="@color/colorBckgMenuHeader"
-            android:padding="@dimen/padding_header_item"
-            />
+            android:paddingBottom="@dimen/padding_grid">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_side">
+
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_category2"
+                    android:layout_marginTop="@dimen/margin_side"
+                    android:layout_marginBottom="@dimen/margin_side"
+                    android:padding="@dimen/padding_header_item"
+                    android:textColor="@color/txtMainColor"
+                    app:bootstrapBrand="success"
+                    android:textSize="@dimen/cate_header_size"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_view_all"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapSize="lg"
+                    app:buttonMode="regular"
+                    app:showOutline="false"
+                    app:roundedCorners="true"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:layout_marginTop="@dimen/margin_side"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <com.shop.submit.shop.Uis.WrappingGridView
+                android:numColumns="3"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridCategory"
+                android:verticalSpacing="@dimen/padding_edittext"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_side"
-            android:background="@color/bckBestSellerColor">
+            android:layout_marginTop="@dimen/margin_side"
+            android:background="@color/bckBestSellerColor"
+            android:orientation="vertical">
 
-            <com.shop.submit.shop.Uis.WrappingGridView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_best_seller"
+                android:layout_marginBottom="@dimen/margin_side"
+                android:paddingLeft="@dimen/padding_header_item"
+                android:textColor="@color/txtHeader"
+                android:textSize="@dimen/cate_header_size"
+                />
+
+            <GridView
                 android:numColumns="2"
                 android:gravity="center"
                 android:stretchMode="columnWidth"
@@ -69,9 +100,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gridProduct"
                 android:scrollbars="none"
-                android:background="@color/bckMainColor"
+                android:background="@color/bckColor"
                 android:padding="@dimen/padding_grid"
-                android:verticalSpacing="@dimen/padding_grid"
                 android:horizontalSpacing="@dimen/padding_grid"
                 />
 

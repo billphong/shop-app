@@ -3,16 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorBckgMenuHeader">#749B29</color>
+    <color name="colorBckgMenuHeader">#44c2fc</color>
     <color name="borderColor">#ebeceb</color>
-    <color name="bckColor">#ffffff</color>
     <color name="txtHeader">#ffffff</color>
     <color name="txtCate">#026df9</color>
     <color name="txtPrice">#ff0000</color>
     <color name="txtOldPrice">#605e5e</color>
     <color name="txtDiscount">#ffffff</color>
-    <color name="bckBestSellerColor">#f7f7c0</color>
 
-    <color name="bckMainColor">#ffffff</color>
+    <color name="txtMainColor">#000000</color>
+
+    <color name="bckBestSellerColor">#f75bb9</color>
+    <color name="bckMainColor">#ebeceb</color>
+    <color name="bckDivColor">#ffffff</color>
+    <color name="bckColor">#ffffff</color>
     <!--<color name="bckMainColor">#f7f7c0</color>-->
 </resources>

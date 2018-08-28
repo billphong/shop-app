@@ -4,6 +4,7 @@
     <dimen name="padding_cate_item">2dp</dimen>
     <dimen name="padding_header_item">10dp</dimen>
     <dimen name="padding_discount">3dp</dimen>
+    <dimen name="padding_bt">3dp</dimen>
 
     <dimen name="slide_height">200dp</dimen>
     <dimen name="img_product_height">80dp</dimen>
@@ -13,4 +14,9 @@
     <dimen name="padding_grid">10dp</dimen>
 
     <dimen name="cate_item_width">100dp</dimen>
+
+
+
+
+    <dimen name="cate_header_size">18sp</dimen>
 </resources>

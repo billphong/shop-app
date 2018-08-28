@@ -6,6 +6,7 @@
     <string name="nav_category2">Danh mục ngành hàng</string>
     <string name="nav_like">Sản phẩm yêu thích</string>
     <string name="nav_account">Quản lý tài khoản</string>
+    <string name="nav_best_seller">Sản phẩm bán chạy</string>
 
 
     <string name="cate_book">Sách</string>

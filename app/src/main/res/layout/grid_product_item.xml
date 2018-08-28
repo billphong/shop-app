@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_cate_item"
+    android:layout_marginBottom="@dimen/slide_height">
+
+    <ImageView
+        android:id="@+id/grid_cate_image"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/grid_product_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_side"
+        android:textAlignment="center"
+        android:textColor="@color/txtCate">
+    </TextView>
+    <TextView
+        android:id="@+id/grid_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_side"
+        android:textAlignment="center"
+        android:textColor="@color/txtPrice">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/grid_product_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/txtOldPrice">
+        </TextView>
+
+        <TextView
+            android:id="@+id/grid_product_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/txtDiscount"
+            android:background="@color/txtPrice">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

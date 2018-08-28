@@ -40,7 +40,30 @@
             android:id="@+id/gridCategory"
             android:verticalSpacing="@dimen/padding_edittext"
             android:scrollbars="none"
-            android:background="@drawable/tab_border"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_best_seller"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_side"
+            android:layout_marginBottom="@dimen/margin_side"
+            android:textAllCaps="true"
+            android:textColor="@color/txtHeader"
+            android:background="@color/colorBckgMenuHeader"
+            android:padding="@dimen/padding_header_item"
+            />
+
+        <com.shop.submit.shop.Uis.WrappingGridView
+            android:numColumns="2"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridProduct"
+            android:verticalSpacing="@dimen/padding_edittext"
+            android:scrollbars="none"
             />
 
     </LinearLayout>

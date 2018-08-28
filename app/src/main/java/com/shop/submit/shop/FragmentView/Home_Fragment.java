@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
@@ -48,6 +49,15 @@ public class Home_Fragment extends Fragment implements BaseSliderView.OnSliderCl
         initSlider();
         initCategories();
         initBestSeller();
+
+        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                CateItem item = (CateItem) parent.getItemAtPosition(position);
+
+            }
+        });
+
         return view;
     }
 

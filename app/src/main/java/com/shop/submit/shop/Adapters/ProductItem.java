@@ -29,7 +29,7 @@ public class ProductItem {
             this.id = jsonObject.getInt("ID");
             this.name = jsonObject.getString("Name");
             this.img = (Apis.HOST + jsonObject.getString("Img")).replace("//","/");
-            this.price = 0;//(int)jsonObject.getDouble("Price");
+            this.price = (int)jsonObject.getDouble("Price");
             this.discount = 0;//jsonObject.getInt("Discount");
             this.saleOff = "";//jsonObject.getString("SaleOff");
             this.oldPrice = 0;

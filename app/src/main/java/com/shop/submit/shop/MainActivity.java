@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         setTitle(Html.fromHtml("<font color='#ffffff'>" + getTitle() + " </font>"));
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().add(R.id.content_main, fr).commit();
+
     }
 
     @Override

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.beardedhen.androidbootstrap.AwesomeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_category2"
+        android:layout_marginTop="@dimen/margin_side"
+        android:layout_marginBottom="@dimen/margin_side"
+        android:padding="@dimen/padding_header_item"
+        android:textColor="@color/txtMainColor"
+        app:bootstrapBrand="success"
+        android:textSize="@dimen/cate_header_size"
+        />
+
+    <GridView
+        android:numColumns="2"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridProduct"
+        android:scrollbars="none"
+        android:background="@color/bckColor"
+        android:padding="@dimen/padding_grid"
+        android:horizontalSpacing="@dimen/padding_grid"
+        />
+
+
+</LinearLayout>

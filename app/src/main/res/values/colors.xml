@@ -9,8 +9,9 @@
     <color name="txtHeader">#ffffff</color>
     <color name="txtCate">#026df9</color>
     <color name="txtPrice">#ff0000</color>
-    <color name="txtOldPrice">#ebeceb</color>
+    <color name="txtOldPrice">#605e5e</color>
     <color name="txtDiscount">#ffffff</color>
+    <color name="bckBestSellerColor">#f7f7c0</color>
 
     <color name="bckMainColor">#ffffff</color>
     <!--<color name="bckMainColor">#f7f7c0</color>-->

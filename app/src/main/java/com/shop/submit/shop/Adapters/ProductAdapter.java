@@ -54,7 +54,7 @@ public class ProductAdapter extends BaseAdapter {
             TextView txtOldPrice = (TextView) view.findViewById(R.id.grid_product_old_price);
             txtOldPrice.setText(Integer.toString(ls.get(i).getOldPrice()));
             TextView txtDiscount = (TextView) view.findViewById(R.id.grid_product_discount);
-            txtDiscount.setText(Integer.toString(ls.get(i).getDiscount()));
+            txtDiscount.setText(Integer.toString(ls.get(i).getDiscount()) + " %");
         }
         return view;
     }

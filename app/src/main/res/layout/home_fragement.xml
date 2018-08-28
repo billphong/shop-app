@@ -55,16 +55,26 @@
             android:padding="@dimen/padding_header_item"
             />
 
-        <com.shop.submit.shop.Uis.WrappingGridView
-            android:numColumns="2"
-            android:gravity="center"
-            android:stretchMode="columnWidth"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/gridProduct"
-            android:verticalSpacing="@dimen/padding_edittext"
-            android:scrollbars="none"
-            />
+            android:padding="@dimen/padding_side"
+            android:background="@color/bckBestSellerColor">
 
+            <com.shop.submit.shop.Uis.WrappingGridView
+                android:numColumns="2"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridProduct"
+                android:scrollbars="none"
+                android:background="@color/bckMainColor"
+                android:padding="@dimen/padding_grid"
+                android:verticalSpacing="@dimen/padding_grid"
+                android:horizontalSpacing="@dimen/padding_grid"
+                />
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

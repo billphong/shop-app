@@ -13,8 +13,8 @@
 
     <color name="txtMainColor">#000000</color>
 
-    <color name="bckBestSellerColor">#f75bb9</color>
-    <color name="bckMainColor">#ebeceb</color>
+    <color name="bckBestSellerColor">#fc2569</color>
+    <color name="bckMainColor">#f7f7c0</color>
     <color name="bckDivColor">#ffffff</color>
     <color name="bckColor">#ffffff</color>
     <!--<color name="bckMainColor">#f7f7c0</color>-->

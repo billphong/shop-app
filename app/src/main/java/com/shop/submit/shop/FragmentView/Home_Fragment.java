@@ -1,9 +1,11 @@
 package com.shop.submit.shop.FragmentView;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +24,7 @@ import com.shop.submit.shop.Adapters.ProductAdapter;
 import com.shop.submit.shop.Adapters.ProductItem;
 import com.shop.submit.shop.Commons.Apis;
 import com.shop.submit.shop.Commons.Categories;
+import com.shop.submit.shop.DataJsons.GetDataProducts;
 import com.shop.submit.shop.Helpers.DataApiHelpers;
 import com.shop.submit.shop.R;
 
@@ -54,7 +57,10 @@ public class Home_Fragment extends Fragment implements BaseSliderView.OnSliderCl
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 CateItem item = (CateItem) parent.getItemAtPosition(position);
-
+                Fragment fr = new Product_Fragment();
+                
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.content_main, fr).addToBackStack("frags").commit();
             }
         });
 
@@ -124,35 +130,8 @@ public class Home_Fragment extends Fragment implements BaseSliderView.OnSliderCl
     }
 
     private void initBestSeller(){
-        ArrayList prs = new ArrayList();// Categories.getInstance().get_cate();
-
-        class GetDataJSON extends AsyncTask<String, Void, String> {
-            protected String doInBackground(String... params) {
-                return DataApiHelpers.GetData(Apis.PRODUCT_BEST_SELLER_API + "1");
-            }
-
-            @Override
-            protected void onPostExecute(String s) {
-                ArrayList<ProductItem> cate = new ArrayList<ProductItem>();
-                try {
-                    JSONArray jsCates = new JSONArray(s);
-                    for (int i = 0; i < jsCates.length(); i ++){
-                        JSONObject obj = jsCates.getJSONObject(i);
-                        cate.add(new ProductItem(obj));
-                    }
-                    ProductAdapter adapter = new ProductAdapter(getContext(), cate);
-                    gridProduct.setAdapter(adapter);
-                }catch (Exception ex){
-                    Log.e("initBestSeller", ex.getMessage());
-                }
-
-                super.onPostExecute(s);
-            }
-        }
-
-        GetDataJSON g = new GetDataJSON();
+        GetDataProducts g = new GetDataProducts(gridProduct, Apis.PRODUCT_BEST_SELLER_API + "1");
         g.execute();
-
     }
 
     @Override

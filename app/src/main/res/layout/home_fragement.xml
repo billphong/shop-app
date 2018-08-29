@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:padding="@dimen/margin_side"
         android:paddingTop="0dp"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="@dimen/margin_side_negative"
         >
 
         <com.daimajia.slider.library.SliderLayout

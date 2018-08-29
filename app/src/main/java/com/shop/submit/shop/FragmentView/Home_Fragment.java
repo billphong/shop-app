@@ -25,6 +25,7 @@ import com.shop.submit.shop.Adapters.ProductAdapter;
 import com.shop.submit.shop.Adapters.ProductItem;
 import com.shop.submit.shop.Commons.Apis;
 import com.shop.submit.shop.Commons.Categories;
+import com.shop.submit.shop.Commons.CommonConstants;
 import com.shop.submit.shop.DataJsons.GetDataProducts;
 import com.shop.submit.shop.Helpers.DataApiHelpers;
 import com.shop.submit.shop.R;
@@ -60,6 +61,9 @@ public class Home_Fragment extends Fragment implements BaseSliderView.OnSliderCl
                 CateItem item = (CateItem) parent.getItemAtPosition(position);
                 Fragment fr = new Product_Fragment();
                 getActivity().setTitle(Html.fromHtml("<font color='#ffffff'>" + item.getTxt() + " </font>"));
+                Bundle bundle = new Bundle();
+                bundle.putString(CommonConstants.CATE_NAME_KEY, item.getTxt());
+                fr.setArguments(bundle);
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_main, fr).addToBackStack("frags").commit();
             }

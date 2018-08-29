@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,7 +59,7 @@ public class Home_Fragment extends Fragment implements BaseSliderView.OnSliderCl
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 CateItem item = (CateItem) parent.getItemAtPosition(position);
                 Fragment fr = new Product_Fragment();
-                
+                getActivity().setTitle(Html.fromHtml("<font color='#ffffff'>" + item.getTxt() + " </font>"));
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.content_main, fr).addToBackStack("frags").commit();
             }

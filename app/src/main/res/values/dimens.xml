@@ -3,7 +3,7 @@
     <dimen name="padding_edittext">5dp</dimen>
     <dimen name="padding_cate_item">2dp</dimen>
     <dimen name="padding_header_item">10dp</dimen>
-    <dimen name="padding_discount">3dp</dimen>
+    <dimen name="padding_discount">4dp</dimen>
     <dimen name="padding_bt">3dp</dimen>
 
     <dimen name="slide_height">200dp</dimen>
